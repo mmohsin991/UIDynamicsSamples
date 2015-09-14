@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="14B25" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="vXZ-lx-hvc">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="14B25" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="oLa-3M-hzZ">
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
@@ -50,6 +50,47 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="33" y="363"/>
+        </scene>
+        <!--AttachmentVC-->
+        <scene sceneID="tD0-gG-g7V">
+            <objects>
+                <viewController id="oLa-3M-hzZ" customClass="AttachmentVC" customModule="UIDynamicsSamples" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="bWs-eW-wAM"/>
+                        <viewControllerLayoutGuide type="bottom" id="cuR-pk-AEH"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="jLo-cm-KQj">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="pl5-BI-UP7">
+                                <rect key="frame" x="42" y="249" width="272" height="276"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="mAo-xc-ZKZ">
+                                        <rect key="frame" x="24" y="8" width="80" height="80"/>
+                                        <color key="backgroundColor" red="0.015690000730000001" green="0.62744998929999996" blue="0.79215997459999998" alpha="1" colorSpace="calibratedRGB"/>
+                                    </view>
+                                    <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="vfH-tC-cfa">
+                                        <rect key="frame" x="157" y="44" width="80" height="80"/>
+                                        <color key="backgroundColor" red="1" green="0.31529364510000002" blue="0.032773842470000002" alpha="1" colorSpace="calibratedRGB"/>
+                                    </view>
+                                </subviews>
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+                    <connections>
+                        <outlet property="containerView" destination="pl5-BI-UP7" id="TFB-OK-zy9"/>
+                        <outlet property="view1" destination="mAo-xc-ZKZ" id="lvF-9T-2Ff"/>
+                        <outlet property="view2" destination="vfH-tC-cfa" id="bcC-7F-K8X"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="TLC-d2-KhO" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="483" y="363"/>
         </scene>
     </scenes>
 </document>

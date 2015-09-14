@@ -13,6 +13,7 @@
 		4269F3B51BA6FB69009DDEFD /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4269F3B41BA6FB69009DDEFD /* Images.xcassets */; };
 		4269F3B81BA6FB69009DDEFD /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4269F3B61BA6FB69009DDEFD /* LaunchScreen.xib */; };
 		4269F3C41BA6FB69009DDEFD /* UIDynamicsSamplesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4269F3C31BA6FB69009DDEFD /* UIDynamicsSamplesTests.swift */; };
+		4269F3CE1BA71C4D009DDEFD /* AttachmentVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4269F3CD1BA71C4D009DDEFD /* AttachmentVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +37,7 @@
 		4269F3BD1BA6FB69009DDEFD /* UIDynamicsSamplesTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = UIDynamicsSamplesTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		4269F3C21BA6FB69009DDEFD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4269F3C31BA6FB69009DDEFD /* UIDynamicsSamplesTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIDynamicsSamplesTests.swift; sourceTree = "<group>"; };
+		4269F3CD1BA71C4D009DDEFD /* AttachmentVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AttachmentVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,6 +81,7 @@
 			children = (
 				4269F3AD1BA6FB69009DDEFD /* AppDelegate.swift */,
 				4269F3AF1BA6FB69009DDEFD /* ViewController.swift */,
+				4269F3CD1BA71C4D009DDEFD /* AttachmentVC.swift */,
 				4269F3B11BA6FB69009DDEFD /* Main.storyboard */,
 				4269F3B41BA6FB69009DDEFD /* Images.xcassets */,
 				4269F3B61BA6FB69009DDEFD /* LaunchScreen.xib */,
@@ -214,6 +217,7 @@
 			files = (
 				4269F3B01BA6FB69009DDEFD /* ViewController.swift in Sources */,
 				4269F3AE1BA6FB69009DDEFD /* AppDelegate.swift in Sources */,
+				4269F3CE1BA71C4D009DDEFD /* AttachmentVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -411,6 +415,7 @@
 				4269F3C91BA6FB69009DDEFD /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		4269F3CA1BA6FB69009DDEFD /* Build configuration list for PBXNativeTarget "UIDynamicsSamplesTests" */ = {
 			isa = XCConfigurationList;
@@ -419,6 +424,7 @@
 				4269F3CC1BA6FB69009DDEFD /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
