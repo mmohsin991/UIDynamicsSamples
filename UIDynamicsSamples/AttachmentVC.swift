@@ -10,7 +10,6 @@ import UIKit
 
 class AttachmentVC: UIViewController {
 
-    var animator : UIDynamicAnimator!
 
     
     @IBOutlet weak var containerView: UIView!
@@ -18,6 +17,15 @@ class AttachmentVC: UIViewController {
     @IBOutlet weak var view1: UIView!
     @IBOutlet weak var view2: UIView!
     
+    
+    var animator : UIDynamicAnimator!
+
+    
+    var draggingView = false
+    var previousTouchPoint : CGPoint!
+    var attachment : UIAttachmentBehavior!
+    var collision : UICollisionBehavior!
+
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -35,7 +43,6 @@ class AttachmentVC: UIViewController {
     }
     
     
-    var collision : UICollisionBehavior!
     
     func addViews(){
         
@@ -67,16 +74,14 @@ class AttachmentVC: UIViewController {
         
         
         var attach = UIAttachmentBehavior(item: self.view1, attachedToItem: self.view2)
-        attach.damping = 1.6
+        attach.damping = 1.0
         attach.frequency = 10
         self.animator.addBehavior(attach)
         
     }
     
     
-    var draggingView = false
-    var previousTouchPoint : CGPoint!
-    var attachment : UIAttachmentBehavior!
+
     
     func handelPan(gesture : UIPanGestureRecognizer){
         let touchPoint = gesture.locationInView(self.containerView)
